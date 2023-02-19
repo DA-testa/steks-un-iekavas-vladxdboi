@@ -24,9 +24,26 @@ def find_mismatch(text):
 
 
 def main():
+    inputs = input("Type F or I: ")
     text = input()
     mismatch = find_mismatch(text)
-    print(mismatch)
+
+    if "I" in inputs:
+        if mismatch != "Success":
+            print(mismatch)
+        else:
+            print("Success")
+
+    elif "F" in inputs:
+        file = input("File path: ")
+        with open(file, "r") as file:
+            text = file.read()
+            if mismatch != "Success":
+                print(mismatch)
+            else:
+                print("Success")
+    else:
+        print("I said F or I")
 
 if __name__ == "__main__":
     main()
