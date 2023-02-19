@@ -43,7 +43,7 @@ def main():
             else:
                 print("Success")
     else:
-        print("I said F or I")
+        print("I said F or I >:(")
 
 if __name__ == "__main__":
     main()
